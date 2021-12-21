@@ -1,0 +1,74 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "To login as different users",
+    "line": 1,
+    "id": "to-login-as-different-users",
+    "tags": [],
+    "uri": "features\\evalCucumber.feature",
+    "elements": [
+      {
+        "id": "to-login-as-different-users;login-as-a-standard-user",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Login as a standard user",
+        "tags": [
+          {
+            "name": "@CucumberScenario",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I type user name \"krishnansiva07@gmail.com\" and password \"Siva1234%\" and click on signin button",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\homePage.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I am navigated to the User home page",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\homePage.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\support\\hooks.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
